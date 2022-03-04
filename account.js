@@ -1,7 +1,11 @@
 'use strict';
 
-const userPin = '4284';
-const userBalance = '1032.75';
+const prompt = require('prompt-sync')();
 
-module.exports.pin = userPin;
-module.exports.balance = userBalance;
+let user = {
+    pin: 1234,
+    balance: 4321
+};
+
+module.exports.pin = user.pin;
+module.exports.balance = user.balance;
