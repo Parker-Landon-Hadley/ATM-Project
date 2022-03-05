@@ -12,10 +12,6 @@ function getBalance(){
     return accountBalance.currentBalance;
 }
 
-/* function getWalletAmount(){
-    console.log(userWalletBalance.walletBalance);
-    return userWalletBalance.walletBalance;
-} */
 
 //withdraw function
 function withdraw( withdrawAmount, validInput){
@@ -44,7 +40,7 @@ function deposit( depositAmount, validInput){
             return accountBalance.currentBalance;
         }
         else{
-            console.log("You don't have enough cash to deposit");
+            console.log("You don't have enough cash to deposit the full amount");
             return accountBalance.currentBalance;
         }
     }
@@ -124,4 +120,3 @@ module.exports.startDeposit = deposit;
 module.exports.pin = validatePin;
 module.exports.validateInput = validatePinInput;
 module.exports.checkUserNumInput = validInputNumber;
-/* module.exports.walletBalance = getWalletAmount; */
