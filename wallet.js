@@ -1,7 +1,7 @@
 "use strict";
 
-let wallet = 500;
+let walletBalance = 500;
 
 module.exports = {
-    wallet
+    walletBalance
 }

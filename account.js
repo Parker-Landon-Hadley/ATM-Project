@@ -2,7 +2,7 @@
 //import account.js file to atm.js file
 //contain a pin and balance variable
 
-//contain current balance of the account
+//Current balance of the account
 let currentBalance = 2000;
 
 //contain user pin
@@ -10,6 +10,6 @@ let pin = 4620;
 
 //export functions or values
 module.exports = {
-    currentBalance,
+    currentBalance, 
     pin
 };
