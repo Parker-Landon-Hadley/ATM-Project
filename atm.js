@@ -1,24 +1,34 @@
-'use strict';
 
-const account = require('./account.js');
-
+"use strict";
+const prompt = require("prompt-sync")();
+const {pin} = require("./account");
+let {currentBalance} = require("./account");
+ 
 function getBalance(){
+    return currentBalance;
+}
 
-};
+function withdraw(num){
+     return currentBalance -= num;
+}
 
-function withdraw(){
+function deposit(wallet){
+    return currentBalance += wallet;
+}
 
-};
+function validatePin(ui){
+    let access = false;
+    
+    if(ui == pin){
+        access = true;
+        return access
+    }    
+    return false;    
+}
 
-function deposit(){
-
-};
-
-function validatePin(){
-
-};
-
-module.exports.balance = getBalance;
-module.exports.withdraw = withdraw;
-module.exports.deposit = deposit;
-module.exports.validatePin = validatePin;
+module.exports = {
+    balance: getBalance,
+    withdraw: withdraw,
+    deposit: deposit,
+    validatePin: validatePin,
+}

@@ -1,10 +1,8 @@
 'use strict';
 
-const prompt = require('prompt-sync')();
-
 let user = {
     pin: 1234,
-    balance: 4321
+    balance: 1035.75
 };
 
 module.exports.pin = user.pin;
