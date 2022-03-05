@@ -1,9 +1,15 @@
-'use strict';
+"use strict"
+//import account.js file to atm.js file
+//contain a pin and balance variable
 
-let user = {
-    pin: 1234,
-    balance: 1035.75
+//contain current balance of the account
+let currentBalance = 2000;
+
+//contain user pin
+let pin = 4620;
+
+//export functions or values
+module.exports = {
+    currentBalance,
+    pin
 };
-
-module.exports.pin = user.pin;
-module.exports.balance = user.balance;
