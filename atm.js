@@ -1,4 +1,10 @@
+// Date:       03/05/2022
+// Project:    RPSLS
+// For:        devCodeCamp
+// Developer   Parker Hadley
+
 "use strict"
+
 //import account.js file into atm.js file
 //import atm.js file to index.js file
 
